@@ -1,0 +1,29 @@
+<ion-content>
+  <img src="assets/img/videocall.jpg"/>
+  <div class="call_time">
+    <h4>Jackie Brown</h4>
+    <h5>1:20s</h5>
+  </div>
+  <div class="self_area">
+    <img src="assets/img/user1.jpg">
+  </div>
+  <ion-footer padding no-border>
+    <ion-row>
+      <ion-col col-4 text-center>
+        <button ion-button icon-only color="light">
+          <ion-icon name="mic-off"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-4 text-center>
+        <button ion-button icon-only color="danger" class="call_cut" (tap)="back()">
+          <ion-icon name="call"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-4 text-center>
+        <button ion-button icon-only color="light" disabled>
+          <ion-icon name="videocam"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-content>

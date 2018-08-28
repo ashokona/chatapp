@@ -1,0 +1,20 @@
+page-status {
+  ion-card.card {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-bottom: 1px solid map_get($colors, light);
+    &:last-child {
+      border-bottom: 0;
+    }
+    video {
+      width: 100%;
+      object-fit: fill;
+    }
+    ion-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+ }

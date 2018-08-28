@@ -1,0 +1,35 @@
+<ion-content>
+  <ion-header no-border>
+
+    <ion-navbar transparent color="primary">
+      <ion-buttons left>
+        <button ion-button icon-only (tap)="this.navCtrl.pop()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Write Something</ion-title>
+      <ion-buttons right>
+        <button ion-button>
+          post
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+
+  </ion-header>
+  <ion-slides [slidesPerView]="1">
+    <ion-slide></ion-slide>
+    <ion-slide></ion-slide>
+    <ion-slide></ion-slide>
+    <ion-slide></ion-slide>
+    <ion-slide></ion-slide>
+  </ion-slides>
+
+  <div class="write_status">
+    <textarea [(ngModel)]="emojitext" (input)="changetextarea()" id="statusInputBox"></textarea>
+    <button ion-button clear color="extralight" icon-only (click)="toggled = !toggled" [(emojiPickerIf)]="toggled"
+            [emojiPickerDirection]="'bottom'" (emojiPickerSelect)="handleSelection($event)">
+      <ion-icon name="happy"></ion-icon>
+    </button>
+  </div>
+
+</ion-content>

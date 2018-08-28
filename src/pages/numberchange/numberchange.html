@@ -1,0 +1,74 @@
+<ion-header no-border>
+
+  <ion-navbar color="primary">
+    <ion-title>Number Change</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="image">
+    <img src="assets/img/numberchange.svg">
+  </div>
+  <div id="content" padding="">
+    <p>Changing your phone number will migrate your account info, groups, and settings.</p>
+    <p>Before procedding, please confirm that you are able to receive sms at your new number.</p>
+    <p>If you have both a new phone and a new number, first change your number on your old phone</p>
+  </div>
+
+  <div id="form" padding="">
+    <div class="form_area">
+      <ion-item>
+        <ion-label>Country Code</ion-label>
+        <ion-select [(ngModel)]="oldccountrycode" placeholder="Code">
+          <ion-option>Afghanistan</ion-option>
+          <ion-option>Albania</ion-option>
+          <ion-option>Algeria</ion-option>
+          <ion-option>Andorra</ion-option>
+          <ion-option>Angola</ion-option>
+          <ion-option>Argentina</ion-option>
+          <ion-option>Armenia</ion-option>
+          <ion-option>Australia</ion-option>
+          <ion-option>Austria</ion-option>
+          <ion-option>Bahamas</ion-option>
+          <ion-option>Bangladesh</ion-option>
+        </ion-select>
+      </ion-item>
+      <div class="input_area">
+        <input type="number" placeholder="Old Phone Number">
+      </div>
+    </div>
+
+    <div class="form_area">
+      <ion-item>
+        <ion-label>Country Code</ion-label>
+        <ion-select [(ngModel)]="newccountrycode" placeholder="Code">
+          <ion-option>Afghanistan</ion-option>
+          <ion-option>Albania</ion-option>
+          <ion-option>Algeria</ion-option>
+          <ion-option>Andorra</ion-option>
+          <ion-option>Angola</ion-option>
+          <ion-option>Argentina</ion-option>
+          <ion-option>Armenia</ion-option>
+          <ion-option>Australia</ion-option>
+          <ion-option>Austria</ion-option>
+          <ion-option>Bahamas</ion-option>
+          <ion-option>Bangladesh</ion-option>
+        </ion-select>
+      </ion-item>
+      <div class="input_area">
+        <input type="number" placeholder="New Phone Number">
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer padding no-border="" id="next">
+  <button ion-button full round (tap)="next()">Next</button>
+</ion-footer>
+
+<ion-footer padding no-border="" id="otp" >
+  <button ion-button full round (tap)="otp()">OTP</button>
+</ion-footer>

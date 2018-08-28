@@ -1,0 +1,185 @@
+<ion-content>
+  <ion-header no-border>
+
+    <ion-navbar transparent color="primary">
+      <ion-title>
+        <span>Friendship</span>
+        <small>Created by Beverly Wright</small>
+      </ion-title>
+      <ion-buttons right (tap)="groupinfochange()">
+        <button ion-button icon-only>
+          <ion-icon name="create"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  <div class="profile_picture">
+    <img src="assets/img/friend_group.jpg" imageViewer>
+  </div>
+  <div class="media">
+    <p class="heading" padding-left>Media</p>
+    <div class="media_content">
+      <div class="single_content">
+        <img src="assets/img/media.jpg" alt="" imageViewer>
+      </div>
+      <div class="single_content">
+        <img src="assets/img/user2.jpg" alt="">
+      </div>
+      <div class="single_content">
+        <img src="assets/img/user3.jpg" alt="">
+      </div>
+      <div class="single_content">
+        <img src="assets/img/user4.jpg" alt="">
+      </div>
+      <div class="single_content">
+        <img src="assets/img/user5.jpg" alt="">
+      </div>
+      <div class="single_content">
+        <img src="assets/img/user6.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <ion-item>
+    <ion-label>Mute</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+
+  <div class="group">
+    <p class="heading">7 Participants
+    <button ion-button="" small outline icon-left="">
+      <ion-icon name="add"></ion-icon> Add
+    </button>
+    </p>
+
+    <div class="user_list">
+      <div class="user_img">
+        <img src="assets/img/user2.jpg">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>Beverly Wright</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="time_area">
+         <button ion-button clear icon-only>
+           <ion-icon name="log-out"></ion-icon>
+         </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_list">
+      <div class="user_img">
+        <img src="assets/img/user3.jpg">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>Josh Brown</h2>
+          <p>This town ain't big enough for the two of us!</p>
+        </div>
+        <div class="time_area">
+         <button ion-button clear icon-only>
+           <ion-icon name="log-out"></ion-icon>
+         </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_list">
+      <div class="user_img">
+        <img src="assets/img/user6.jpg">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>Revikeo Brishley</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="time_area">
+         <button ion-button clear icon-only>
+           <ion-icon name="log-out"></ion-icon>
+         </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_list">
+      <div class="user_img">
+        <img src="assets/img/user1.jpg">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>Jackie Brown</h2>
+          <p>This town ain't big enough for the two of us!</p>
+        </div>
+        <div class="time_area">
+         <button ion-button clear icon-only>
+           <ion-icon name="log-out"></ion-icon>
+         </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_list">
+      <div class="user_img">
+        <img src="assets/img/user2.jpg">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>Beverly Wright</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="time_area">
+         <button ion-button clear icon-only>
+           <ion-icon name="log-out"></ion-icon>
+         </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_list">
+      <div class="user_img">
+        <img src="assets/img/user3.jpg">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>Josh Brown</h2>
+          <p>This town ain't big enough for the two of us!</p>
+        </div>
+        <div class="time_area">
+         <button ion-button clear icon-only>
+           <ion-icon name="log-out"></ion-icon>
+         </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_list">
+      <div class="user_img">
+        <img src="assets/img/user6.jpg">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>Revikeo Brishley</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="time_area">
+         <button ion-button clear icon-only>
+           <ion-icon name="log-out"></ion-icon>
+         </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="btn_area">
+    <button ion-button icon-left color="danger" outline>
+      <ion-icon name="log-out"></ion-icon>
+      Exit group
+    </button>
+    <button ion-button icon-left color="danger" outline>
+      <ion-icon name="thumbs-down"></ion-icon>
+      Report Spam
+    </button>
+  </div>
+</ion-content>

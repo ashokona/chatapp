@@ -1,0 +1,122 @@
+page-profile {
+  .profile_wrapper {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    height: 100%;
+    //padding: 16px;
+    min-height: 400px;
+    .image_background {
+      position: relative;
+      flex: 3;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      min-height: 220px;
+      max-height: 220px;
+      &:after {
+        content: '';
+        background-color: #3F51B5;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+      }
+      .profile_img_wrapper {
+        position: relative;
+        .profile_picture {
+          height: 180px;
+          width: 180px;
+          border-radius: 100%;
+          background-color: map_get($colors, lightprimary);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.11);
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+          img.camera_img {
+            position: absolute;
+          }
+        }
+        .button {
+          position: absolute;
+          right: 12px;
+          height: 45px;
+          width: 45px;
+          border-radius: 100%;
+          margin: 0;
+          bottom: 0;
+          background-color: map_get($colors, extralight);
+        }
+      }
+    }
+    .profile_detials {
+      flex: 2;
+      padding: 16px;
+      .heading {
+        font-size: 1.8rem;
+        color: map_get($colors, primary);
+      }
+      ion-list-header{
+        border-bottom: 1px solid map_get($colors, greyborder);
+        border-top: 0;
+        color: map_get($colors, primary);
+        margin-bottom: 0;
+        padding-left: 0;
+      }
+      .item-inner{
+        padding-right: 0;
+        .button{
+          margin-right: 0;
+        }
+      }
+      .long_txt{
+        ion-label{
+          white-space: normal;
+        }
+      }
+
+      button.item{
+        border-bottom: 1px solid map_get($colors, greyborder);
+        &:last-child{
+          border-bottom: 0;
+        }
+      }
+
+      input {
+        border: 1px solid map_get($colors, greyborder);
+        width: 100%;
+        border-radius: 30px;
+        padding: 0 8px;
+        font-size: 1.6rem;
+        min-height: 48px;
+        padding-right: 50px;
+      }
+      .input_emoji {
+        position: relative;
+        .button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: 0;
+          min-height: 100%;
+        }
+        emoji-picker {
+          width: calc(100% + 32px);
+        }
+      }
+      .button {
+        box-shadow: none;
+        margin-top: 16px;
+      }
+    }
+  }
+}

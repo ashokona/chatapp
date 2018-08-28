@@ -1,0 +1,15 @@
+page-chatsetting {
+  button.item {
+    border-bottom: 1px solid map_get($colors, greyborder) !important;
+    ion-icon{
+      width: 28px;
+    }
+    &:last-child{
+      border-bottom: 0 !important;
+    }
+    .item-inner {
+      background-image: none !important;
+      padding-right: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="signup_wrapper">
+    <div class="signup_top_area">
+      <img class="logo" src="assets/img/logo.svg">
+    </div>
+    <div class="signup_bottom_area">
+      <div class="form_area">
+        <ion-item>
+          <ion-label>Country Code</ion-label>
+          <ion-select [(ngModel)]="ccountrycode" placeholder="Code">
+            <ion-option>Afghanistan</ion-option>
+            <ion-option>Albania</ion-option>
+            <ion-option>Algeria</ion-option>
+            <ion-option>Andorra</ion-option>
+            <ion-option>Angola</ion-option>
+            <ion-option>Argentina</ion-option>
+            <ion-option>Armenia</ion-option>
+            <ion-option>Australia</ion-option>
+            <ion-option>Austria</ion-option>
+            <ion-option>Bahamas</ion-option>
+            <ion-option>Bangladesh</ion-option>
+          </ion-select>
+        </ion-item>
+        <div class="input_area">
+          <input type="number" placeholder="Phone Number">
+        </div>
+      </div>
+      <button ion-button full round (tap)="otp()">Next</button>
+    </div>
+  </div>
+</ion-content>

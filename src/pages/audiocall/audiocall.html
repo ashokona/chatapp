@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="pro_img_bg">
+    <img src="assets/img/user1.jpg">
+  </div>
+  <div class="call_time">
+    <img src="assets/img/user1.jpg">
+    <h4>Joshua Thomas</h4>
+    <h5>1:20s</h5>
+  </div>
+  <ion-footer padding no-border>
+    <ion-row>
+      <ion-col col-4 text-center>
+        <button ion-button icon-only color="light">
+          <ion-icon name="mic-off"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-4 text-center>
+        <button ion-button icon-only color="danger" class="call_cut" (tap)="back()">
+          <ion-icon name="call"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-4 text-center>
+        <button ion-button icon-only color="light">
+          <ion-icon name="videocam"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-content>

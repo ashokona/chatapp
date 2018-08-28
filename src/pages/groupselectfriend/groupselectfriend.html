@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Select Friends</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal>
+  <div *ngFor="let contact of contactList">
+    <div class="user_list" (tap)="tapedAvatar(contact.id)">
+      <div [class]="isInArray(contact.id) ? 'user_img selected' : 'user_img not-selected'">
+        <img src="{{contact.pics}}">
+      </div>
+      <div class="user_details">
+        <div class="text_area">
+          <h2>{{contact.name}}</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ion-fab right bottom (tap)="groupnameadd()">
+    <button ion-fab color="lightprimary">
+      <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

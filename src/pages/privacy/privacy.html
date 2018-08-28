@@ -1,0 +1,39 @@
+<!--
+  Generated template for the PrivacyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Privacy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal="">
+  <button ion-item no-padding no-lines (tap)="lastseen()">
+    <ion-icon item-start name="done-all" color="primary"></ion-icon>
+    Last Seen
+    <span item-end>
+      Everyone
+    </span>
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="profilepicture()">
+    <ion-icon item-start name="happy" color="primary"></ion-icon>
+    Profile Picture
+    <span item-end>
+      Everyone
+    </span>
+  </button>
+  <button ion-item no-padding no-lines (tap)="about()">
+    <ion-icon item-start name="information-circle" color="primary"></ion-icon>
+    About
+    <span item-end>
+      Everyone
+    </span>
+  </button>
+</ion-content>

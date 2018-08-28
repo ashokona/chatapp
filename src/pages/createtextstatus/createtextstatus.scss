@@ -1,0 +1,45 @@
+page-createtextstatus {
+  ion-slides {
+    ion-slide {
+      background-color: map_get($slide, sliderpurple);
+      &:nth-child(2) {
+        background-color: map_get($slide, sliderred);
+      }
+      &:nth-child(3) {
+        background-color: map_get($slide, sliderblue);
+      }
+      &:nth-child(4) {
+        background-color: map_get($slide, sliderteal);
+      }
+      &:nth-child(5) {
+        background-color: map_get($slide, sliderbrown);
+      }
+    }
+  }
+  .write_status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 11;
+    padding: 16px;
+    textarea {
+      width: 100%;
+      font-size: 3rem;
+      border: 0;
+      height: 100%;
+      text-align: center;
+      background-color: transparent;
+      z-index: 1;
+      resize: none;
+      color: map_get($colors, extralight);
+      padding: 0 16px;
+      //line-height: 3.8rem;
+      border-bottom: 1px solid #f1f1f1;
+    }
+  }
+}

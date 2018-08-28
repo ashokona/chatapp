@@ -1,0 +1,69 @@
+<ion-content>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/user2.jpg">
+      </ion-avatar>
+      <h2>Beverly Wright</h2>
+      <p>5 mins</p>
+    </ion-item>
+
+    <img src="assets/img/post1.jpg" imageViewer>
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+        DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/user3.jpg">
+      </ion-avatar>
+      <h2>Josh Brown</h2>
+      <p>15 mins</p>
+    </ion-item>
+
+    <img src="assets/img/post2.jpg" imageViewer>
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+        DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/user1.jpg">
+      </ion-avatar>
+      <h2>Jackie Brown</h2>
+      <p>45 mins</p>
+    </ion-item>
+
+    <img src="assets/img/user1.jpg" imageViewer>
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+        DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-fab right bottom>
+    <button ion-fab color="lightprimary"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab (tap)="camerastatus()"><ion-icon name="camera"></ion-icon></button>
+      <button ion-fab (tap)="videostatus()"><ion-icon name="videocam"></ion-icon></button>
+      <button ion-fab (tap)="gallerystatus()"><ion-icon name="image"></ion-icon></button>
+      <button ion-fab (tap)="textstatus()"><ion-icon name="create"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

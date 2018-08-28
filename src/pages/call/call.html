@@ -1,0 +1,496 @@
+<ion-content fullscreen padding-horizontal>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (5) Today 9:43 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary" (tap)="audiocall()">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user2.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-up" class="incoming" color="secondary"></ion-icon>
+          (4) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="call"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (1) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user3.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (3) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (5) Today 9:43 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user2.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-up" class="incoming" color="secondary"></ion-icon>
+          (4) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="call"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (1) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user3.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (3) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (5) Today 9:43 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user2.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-up" class="incoming" color="secondary"></ion-icon>
+          (4) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="call"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (1) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user3.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (3) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (5) Today 9:43 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic()">
+      <img src="assets/img/user2.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-up" class="incoming" color="secondary"></ion-icon>
+          (4) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user1.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="call"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (1) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <div class="user_list">
+    <div class="user_img" (tap)="showpic($event)">
+      <img src="assets/img/user3.jpg">
+    </div>
+    <div class="user_details">
+      <div class="text_area">
+        <h2>Josh Brown <ion-icon name="videocam"></ion-icon></h2>
+        <p>
+          <ion-icon name="arrow-round-down" class="incoming" color="danger"></ion-icon>
+          (3) Today 8:05 am
+        </p>
+      </div>
+      <div class="user_list_end">
+        <ion-fab top right edge>
+          <button ion-fab mini>
+            <ion-icon name="ios-undo"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab color="primary" (tap)="videocall()">
+              <ion-icon name="videocam"></ion-icon>
+            </button>
+            <button ion-fab color="primary">
+              <ion-icon name="call"></ion-icon>
+            </button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </div>
+  </div>
+
+  <ion-fab right bottom>
+    <button ion-fab color="lightprimary">
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+      <button ion-fab>
+        <ion-icon name="call"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="videocam"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

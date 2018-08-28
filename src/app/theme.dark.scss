@@ -1,0 +1,96 @@
+$darkbg: #090f2f;
+$darkbgtxt: #cccccc;
+$darkmsg: #0c164a;
+$darkmsg_selected: #3f51b5;
+$border: rgba(244, 244, 244, 0.12);
+$icon: #5168ec;
+
+.dark-theme {
+  .scroll-content{
+    background-color: $darkbg !important;
+  }
+  ion-content, ion-item.item, .content-md, .message {
+    background-color: $darkbg !important;
+    color: $darkbgtxt !important;
+  }
+  .msg {
+    background-color: $darkmsg !important;
+  }
+  .msg_day span {
+    background-color: #14205d !important;
+  }
+  .msg_day:after {
+    background-color: #1f3291 !important;
+  }
+  ion-card.card, ion-list-header, .item , .user_list{
+    background-color: $darkbg;
+    color: $darkbgtxt !important;
+    border-bottom: 1px solid $border !important;
+    h2, p {
+      color: $darkbgtxt;
+    }
+    .icon {
+      color: $icon;
+    }
+  }
+  li.selected{
+    background-color: $darkmsg_selected !important;
+  }
+  ion-footer {
+    background-color: $darkbg;
+    textarea {
+      background-color: transparent;
+      color: $darkbgtxt;
+    }
+    .icon {
+      color: $darkbgtxt;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $darkbgtxt;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: $darkbgtxt;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: $darkbgtxt;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: $darkbgtxt;
+    }
+  }
+
+  .toolbar-title {
+    color: #fff;
+  }
+
+  .user_list {
+    border-bottom: 1px solid $border;
+    .text_area h2, time {
+      color: $darkbgtxt;
+      ion-icon {
+        color: #b2b2b2 !important;
+      }
+    }
+  }
+  ion-list-header {
+    border-bottom: 1px solid $border;
+    color: #fff;
+  }
+  input{
+    background-color: transparent;
+  }
+  .input_emoji{
+    ion-icon{
+     color: $darkbgtxt
+    }
+  }
+  page-groupselectfriend .user_img.selected:after {
+    border: 1.3px dashed $darkbgtxt;
+  }
+}
+
+page-groupprofile.ion-page.show-page{
+  .item-inner{
+    border-bottom: 0;
+  }
+}

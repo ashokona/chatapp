@@ -1,0 +1,79 @@
+<ion-header no-border>
+
+  <ion-navbar color="primary">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="profile_wrapper">
+    <div class="image_background">
+      <div class="profile_img_wrapper">
+        <div class="profile_picture">
+          <img [src]="base64Image" *ngIf="base64Image" imageViewer/>
+          <!--<img class="camera_img" src="assets/img/camera.svg" alt="">-->
+        </div>
+        <button ion-button outline icon-only color="primary" (tap)="changepic()">
+          <ion-icon name="camera"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <div class="profile_detials">
+      <!--<p class="heading">Profile Details</p>-->
+
+      <ion-list-header>User Name</ion-list-header>
+
+      <ion-item no-padding no-lines>
+        Josh Brown
+        <button ion-button icon-only clear item-end (tap)="changeusername()">
+          <ion-icon name="create"></ion-icon>
+        </button>
+      </ion-item>
+
+      <ion-list-header>Status</ion-list-header>
+
+      <ion-item no-padding no-lines class="long_txt">
+        Girl are like moving car! Can change the road anytime whenever they find a better road. 😃😃
+        <button ion-button icon-only clear item-end (tap)="changestatus()">
+          <ion-icon name="create"></ion-icon>
+        </button>
+      </ion-item>
+
+      <ion-list-header>Other Option</ion-list-header>
+
+
+      <button ion-item no-padding no-lines (tap)="profilesetting()">
+        <ion-icon item-start name="person" color="primary"></ion-icon>
+        Profile Setting
+      </button>
+
+      <button ion-item no-padding no-lines (tap)="chatsetting()">
+        <ion-icon item-start name="chatbubbles" color="primary"></ion-icon>
+        Chat Setting
+      </button>
+
+      <button ion-item no-padding no-lines="" (tap)="datausage()">
+        <ion-icon item-start name="analytics" color="primary"></ion-icon>
+        Data Usage
+      </button>
+
+      <button ion-item no-padding no-lines="" (tap)="notification()">
+        <ion-icon item-start name="musical-notes" color="primary"></ion-icon>
+        Notification
+      </button>
+
+      <button ion-item no-padding no-lines="" (tap)="block()">
+        <ion-icon item-start name="close-circle" color="primary"></ion-icon>
+        Block Contacts
+      </button>
+
+      <button ion-item no-padding no-lines="">
+        <ion-icon item-start name="help" color="primary"></ion-icon>
+        Contact Us
+      </button>
+
+    </div>
+  </div>
+</ion-content>

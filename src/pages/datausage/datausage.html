@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Data Usage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal="">
+  <button ion-item no-padding no-lines (tap)="mobiledata()">
+    <ion-icon item-start name="phone-portrait" color="primary"></ion-icon>
+    Using Mobile
+    <span item-end>
+      No Media
+    </span>
+  </button>
+  <button ion-item no-padding no-lines (tap)="wifidata()">
+    <ion-icon item-start name="wifi" color="primary"></ion-icon>
+    Using Wi-Fi
+    <span item-end>
+      All Media
+    </span>
+  </button>
+  <button ion-item no-padding no-lines (tap)="roaming()">
+    <ion-icon item-start name="jet" color="primary"></ion-icon>
+    When Roaming
+    <span item-end>
+      No Media
+    </span>
+  </button>
+
+  <button ion-item no-padding no-lines class="check_box">
+    <ion-label>Low Data Usage
+      <small>Lower the ammount of data used during a Multichat call</small>
+    </ion-label>
+    <ion-checkbox color="primary" item-end=""></ion-checkbox>
+  </button>
+
+</ion-content>

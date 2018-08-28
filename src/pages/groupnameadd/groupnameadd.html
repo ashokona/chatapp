@@ -1,0 +1,30 @@
+<ion-header no-border>
+
+  <ion-navbar color="primary">
+    <ion-title>Group Name</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="profile_wrapper">
+    <div class="image_background">
+      <div class="profile_picture">
+        <img [src]="base64Image" *ngIf="base64Image"/>
+        <button ion-button clear icon-only color="extralight" (tap)="changepic()">
+        </button>
+      </div>
+    </div>
+    <div class="buttons_area">
+      <div class="input_emoji">
+        <input type="text" placeholder="Group Name" [(ngModel)]="emojitext">
+        <button ion-button color="dark" clear icon-only clear (tap)="toggled = !toggled" [(emojiPickerIf)]="toggled"
+                [emojiPickerDirection]="'top'" (emojiPickerSelect)="handleSelection($event)">
+          <ion-icon name="ios-happy-outline"></ion-icon>
+        </button>
+      </div>
+      <button ion-button full round>Create</button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Notification</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal="">
+  <button ion-item no-padding no-lines class="check_box">
+    <ion-label>Conversation Tone
+      <small>Play sounds for incoming and outgoing messages.</small>
+    </ion-label>
+    <ion-checkbox color="primary" [checked]="true" item-end=""></ion-checkbox>
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="messagetune()">
+    <ion-icon item-start name="musical-note" color="primary"></ion-icon>
+    Notification Tone
+    <span item-end>
+      Tune 1
+    </span>
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="vibrate()">
+    <ion-icon item-start name="phone-portrait" color="primary"></ion-icon>
+    Vibrate
+    <span item-end>
+      Default
+    </span>
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="ringtone()">
+    <ion-icon item-start name="musical-notes" color="primary"></ion-icon>
+    Call Tune
+    <span item-end>
+      Tune 1
+    </span>
+  </button>
+
+
+  <button ion-item no-padding no-lines (tap)="callvibrate()">
+    <ion-icon item-start name="phone-portrait" color="primary"></ion-icon>
+    Call Vibrate
+    <span item-end>
+      Default
+    </span>
+  </button>
+</ion-content>

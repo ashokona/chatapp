@@ -1,0 +1,81 @@
+page-signup {
+  .signup_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .signup_top_area{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 3;
+      background-color: map_get($colors, primary);
+      .logo {
+        width: 120px;
+      }
+  }
+    .signup_bottom_area{
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 16px;
+      .form_area {
+        display: flex;
+        align-items: stretch;
+        ion-item {
+          flex: 1;
+          min-width: 80px;
+          border: 1px solid map_get($colors, greyborder);
+          border-radius: 30px;
+          padding: 0 8px;
+          .item-inner {
+            padding-right: 0 !important;
+            border-bottom: 0 !important;
+          }
+          .select {
+            padding: 12px 0;
+            flex: 1;
+            min-width: 100%;
+            .select-text {
+              min-width: inherit;
+              text-align: center;
+            }
+            .select-placeholder{
+              color: #858585;
+            }
+            .select-icon {
+              left: -5px;
+              display: none;
+              .select-icon-inner {
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+          }
+          ion-label {
+            display: none;
+          }
+        }
+        .input_area {
+          flex: 5;
+          width: 100%;
+          margin-left: 12px;
+          input {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            border: 1px solid map_get($colors, greyborder);
+            border-radius: 30px;
+            padding: 0 8px;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .button{
+        box-shadow: none;
+        margin-top: 32px;
+      }
+    }
+  }
+
+}

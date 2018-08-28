@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-list-header mode="wp" color="primary">
+    <span>Record</span>
+      <button ion-button icon-only text-right clear color="extralight" (tap)="dismiss()">
+        <ion-icon name="send"></ion-icon>
+      </button>
+  </ion-list-header>
+  <h4>0:20</h4>
+<ion-row>
+  <ion-col col-4>
+    <button ion-button icon-only class="small_btn">
+      <ion-icon name="refresh"></ion-icon>
+    </button>
+  </ion-col>
+  <ion-col col-4>
+    <button ion-button large icon-only class="large_btn" (tap)="startrecord()">
+      <ion-icon [name]="buttonIcon"></ion-icon>
+    </button>
+  </ion-col>
+  <ion-col col-4>
+    <button ion-button icon-only class="small_btn">
+      <ion-icon name="square"></ion-icon>
+    </button>
+  </ion-col>
+</ion-row>
+</ion-content>

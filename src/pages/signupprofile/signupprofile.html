@@ -1,0 +1,25 @@
+<ion-header no-border>
+
+  <ion-navbar color="primary">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="profile_wrapper">
+    <div class="image_background">
+      <div class="profile_picture">
+        <img [src]="base64Image" *ngIf="base64Image"/>
+        <button ion-button clear icon-only color="extralight" (tap)="changepic()">
+        </button>
+      </div>
+    </div>
+    <div class="buttons_area">
+    <input type="text" placeholder="User Name">
+
+    <button ion-button full round (tap)="tab()">Setup</button>
+    </div>
+  </div>
+</ion-content>

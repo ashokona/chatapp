@@ -1,0 +1,261 @@
+page-groupchat {
+  .header {
+    button {
+      img {
+        max-height: 100%;
+        border-radius: 100%;
+        margin-left: 4px;
+      }
+    }
+    .toolbar-title {
+      white-space: normal;
+      display: flex;
+      flex-direction: column;
+      span{
+        white-space: nowrap;
+      }
+      small {
+        font-size: 60%;
+        white-space: nowrap;
+      }
+    }
+
+    .btn_area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 16px;
+      ion-buttons {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+  .scroll-content {
+    .message {
+      background-color: map_get($colors, extralight);
+      float: left;
+      width: 100%;
+      overflow: auto;
+      .chat {
+        padding: 0;
+        margin: 0;
+        float: left;
+        overflow: auto;
+        width: 100%;
+        .other {
+          width: 100%;
+          padding: 8px;
+          float: left;
+          .avatar {
+            width: 40px;
+            float: left;
+            margin-right: 8px;
+            top: 8px;
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 100%;
+              border: 1px solid #ccc;
+            }
+          }
+          .msg {
+            float: left;
+            max-width: calc(100% - 58px);
+            text-align: left;
+            padding: 16px;
+            border-radius: 30px;
+            border-top-left-radius: 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: map_get($colors, bgcolor);
+            img {
+              border-radius: 18px;
+              border-top-left-radius: 0;
+              width: 100%;
+            }
+            p {
+              line-height: 20px;
+              font-size: 14px;
+              font-family: inherit;
+              flex: 1;
+              margin: auto 0;
+              width: 100%;
+            }
+            img {
+              max-width: 100%;
+              width: 300px;
+              padding: 8px 0;
+            }
+          }
+        }
+        .self {
+          width: 100%;
+          padding: 8px;
+          float: right;
+          color: map_get($colors, extralight);
+          .avatar {
+            width: 40px;
+            float: right;
+            margin-left: 8px;
+            top: 8px;
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 100%;
+              border: 1px solid #ccc;
+            }
+          }
+          p {
+            line-height: 20px;
+            font-size: 14px;
+            font-family: inherit;
+            flex: 1;
+            margin: auto 0;
+          }
+          .msg {
+            float: right;
+            max-width: calc(100% - 58px);
+            text-align: left;
+            background-color: map_get($colors, primary);
+            padding: 16px;
+            border-radius: 30px;
+            border-top-right-radius: 0;
+            position: relative;
+            min-width: 100px;
+            img {
+              border-radius: 18px;
+              border-top-right-radius: 0;
+              width: 100%;
+            }
+          }
+        }
+        .msg {
+          span {
+            text-decoration: underline;
+          }
+          .msg_details {
+            float: right;
+            font-size: 12px;
+            display: flex;
+            align-items: flex-end;
+            margin-top: 8px;
+            height: 12px;
+            opacity: 0.8;
+            time {
+              font-size: 12px;
+              text-transform: lowercase;
+            }
+            ion-icon {
+              margin-left: 8px;
+              position: relative;
+              display: flex;
+              align-items: center;
+            }
+            .arrow-right {
+              width: 0;
+              height: 0;
+              border-top: 0 solid transparent;
+              border-bottom: 13px solid transparent;
+              border-left: 13px solid #fff;
+              position: absolute;
+              right: -13px;
+              top: 0;
+              transform: scale(-1);
+            }
+          }
+        }
+        .msg_day {
+          float: left;
+          width: 100%;
+          padding: 8px;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+          span {
+            padding: 4px 6px;
+            border-radius: 40px;
+            background-color: map_get($colors, bgcolor);
+          }
+          &:after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            transform: translateY(-50%);
+            background-color: map_get($colors, bgcolor);
+            z-index: -1;
+          }
+        }
+      }
+
+    }
+  }
+  .hideonscrolldown, .hideonscrollup, #scroll_btn {
+    transform: scale(0);
+    transition: all ease 300ms;
+    ion-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  ion-footer {
+    background-color: map_get($colors, extralight);
+    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.06);
+    .text_section {
+      display: flex;
+      padding: 4px;
+      position: relative;
+      textarea {
+        flex: 1;
+        border: 0;
+        resize: none;
+        max-height: 200px;
+        transition: all linear 300ms !important;
+      }
+      .button {
+        margin: 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        top: -15px;
+      }
+    }
+    //.addspace {
+    //  height: 314px;
+    //  float: left;
+    //  width: 100%;
+    //  z-index: -1;
+    //}
+    .buttons_area {
+      display: flex;
+      .button {
+        flex: 1;
+        margin: 0;
+      }
+      //emoji-picker {
+      //  position: absolute;
+      //  bottom: -450px;
+      //  [_nghost-c1] {
+      //    box-shadow: none;
+      //  }
+      //}
+    }
+  }
+
+  //select message
+  .selected{
+    background-color: map_get($colors, msgselect);
+  }
+}

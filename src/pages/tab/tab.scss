@@ -1,0 +1,24 @@
+page-tab {
+  #tab_header {
+    transition: all linear 0.3s;
+  }
+  .toolbar-background {
+    background-color: map_get($colors, primary);
+    border-width: 0;
+  }
+  super-tab-button {
+    ion-icon {
+      color: white;
+    }
+  }
+  .indicator {
+    background-color: #fff;
+  }
+  .content-ios {
+    .scroll-content {
+      &:first-child{
+      margin-top: 44px;
+      }
+    }
+  }
+}

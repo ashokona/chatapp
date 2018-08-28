@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Chat Backup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-icon name="cloud-upload" item-start color="primary"></ion-icon>
+    Last Backup
+    <p margin-bottom="">Local: 18 November, 11:07 a.m <br>
+      Google Drive: 18 November, 11:11 a.m
+      <br>
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam asperiores aut consequatur cumque
+      deserunt, eaque enim et eveniet expedita iusto mollitia nesciunt optio perspiciatis placeat quaerat qui quisquam
+      rerum sed sequi soluta unde vero.</p>
+    <button ion-button="" no-margin="" small="" color="primary">Backup</button>
+  </ion-item>
+
+  <ion-item no-lines="">
+    <ion-icon name="logo-google" item-start color="primary"></ion-icon>
+    Google Drive Setting
+
+    <div class="buttons" (tap)="backuptime()">
+      <p>Backup to Google Drive</p>
+      <small>Daily</small>
+    </div>
+
+    <div class="buttons" (tap)="account()">
+      <p>Accounts</p>
+      <small>ajoykarmakar459@gmail.com</small>
+    </div>
+
+    <div class="buttons" (tap)="backupnetwork()">
+      <p>Back up over</p>
+      <small>Wi-Fi only</small>
+    </div>
+
+    <div class="buttons" (tap)="includevideo()">
+      <p>Include Videos</p>
+      <small>Yes</small>
+    </div>
+
+  </ion-item>
+
+</ion-content>

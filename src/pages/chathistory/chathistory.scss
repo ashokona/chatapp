@@ -1,0 +1,10 @@
+page-chathistory {
+  .scroll-content {
+    button.item {
+      border-bottom: 1px solid map_get($colors, greyborder);
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}

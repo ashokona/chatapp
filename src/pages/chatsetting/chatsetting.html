@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Chat Setting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal>
+  <button ion-item no-padding no-lines (tap)="language()">
+    <ion-icon item-start name="done-all" color="primary"></ion-icon>
+    Language
+    <span item-end>
+      English
+    </span>
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="profilepicture()">
+    <ion-icon item-start name="happy" color="primary"></ion-icon>
+    Font Size
+    <span item-end>
+      Normal
+    </span>
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="wallpaper()">
+    <ion-icon item-start name="image" color="primary"></ion-icon>
+    Wallpaper
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="chatbackup()">
+    <ion-icon item-start name="cloud" color="primary"></ion-icon>
+    Chat Backup
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="chathistory()">
+    <ion-icon item-start name="timer" color="primary"></ion-icon>
+    Chat History
+  </button>
+
+</ion-content>

@@ -1,0 +1,19 @@
+page-chatbackup {
+  ion-item {
+    ion-icon {
+      align-self: flex-start;
+    }
+    ion-label {
+      white-space: normal;
+      .buttons{
+        margin-top: 16px;
+        p{
+          color: map_get($colors, moredark);
+        }
+        small{
+          color: map_get($colors, dark);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+page-groupselectfriend {
+  .user_img{
+    transition: all linear 0.08s;
+  }
+  .user_img.selected {
+    position: relative;
+    padding: 5px;
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 1.3px dashed map_get($colors, primary);
+      border-radius: 100%;
+      animation: spin 7s infinite linear;
+    }
+    img {
+      border-radius: 100%
+    }
+  }
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+}

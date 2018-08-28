@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Profile Setting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal>
+  <button ion-item no-padding no-lines (tap)="privacy()">
+    <ion-icon item-start name="lock" color="primary"></ion-icon>
+    Privacy
+  </button>
+
+  <button ion-item no-padding no-lines (tap)="changenumber()">
+    <ion-icon item-start name="swap" color="primary"></ion-icon>
+    Chnage Number
+  </button>
+
+  <button ion-item no-padding no-lines>
+    <ion-icon item-start name="trash" color="primary"></ion-icon>
+    Account Delete
+  </button>
+
+</ion-content>

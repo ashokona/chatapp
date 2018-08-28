@@ -1,0 +1,29 @@
+<ion-header no-border>
+
+  <ion-navbar color="primary">
+    <ion-title>Verify OTP</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="otp_wrapper">
+    <div class="otp_top_area">
+      <img class="logo" src="assets/img/phone.svg">
+    </div>
+    <div class="otp_bottom_area">
+      <p class="text">Enter the 4 digit code you recieved now in your phone to continue.</p>
+      <div class="input_area">
+      <input type="number">
+      <p>Code expire in <span class="time">3:50</span></p>
+      </div>
+      <div class="btn_area">
+      <button ion-button full round (tap)="verify()">Verify</button>
+        <p>
+          Didn't get the code? <button ion-button clear icon-only text-capitalize>Resend</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>

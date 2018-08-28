@@ -1,0 +1,63 @@
+page-audiocall {
+  ion-content {
+    .scroll-content {
+      overflow: hidden;
+      display: flex;
+      &:after{
+        background-image: url("../assets/img/user1.jpg");
+        background-size: cover;
+        content: '';
+        background-color: black;
+        opacity: 0.2;
+        z-index: -1;
+      }
+      .pro_img_bg{
+        position: absolute;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        z-index: -2;
+        img{
+          filter: blur(6px);
+          transform: scale(2.5);
+          background-size: cover;
+          width: auto;
+          height: auto;
+          border-radius: 0;
+        }
+
+      }
+      .call_time {
+        text-align: center;
+        margin: auto;
+        color: map_get($colors, extralight);
+      }
+      img{
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+    ion-footer{
+      background-color: map_get($colors, primary);
+      ion-col {
+        display: flex;
+        .button {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          margin: auto;
+        }
+        .call_cut {
+          width: 60px;
+          height: 60px;
+          ion-icon {
+            transform: rotate(135deg);
+          }
+        }
+      }
+    }
+  }
+}
